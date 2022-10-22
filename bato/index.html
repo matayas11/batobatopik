@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/8dbd72d53e.js" crossorigin="anonymous"></script>
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+
+  <div class="wrapper">
+      <div class="scoreboard"> 
+          <div class="title">
+              <img src="bat1.png" />
+          </div>
+          <div class="score">
+              <p>PLAYER SCORE</p>
+              <h1 id="player_score"> 0 </h1>
+          </div>
+          <div class="cpscore">
+            <p>COMPUTER  SCORE</p>
+            <h1 id="comp_score"> 0 </h1>
+        </div>
+      </div>
+      <div class="hands">
+            <div class="hand paper">
+              <img src="Paper2.png" onclick="pickUserHand('paper')"/>
+            </div>
+            <div class="hand scissors">
+              <img src="scissors.png" onclick="pickUserHand('scissors')"/>
+            </div>
+            <div class="hand rock">
+              <img src="rock1.png" onclick="pickUserHand('rock')"/>                        
+            </div>
+      </div>
+      <div class="contest">       
+        <div class="userhand">
+            <h1>YOU PICKED</h1>
+            <div class="handImageContainer">
+              <img id="userPickImage" src="Paper2.png">
+            </div>
+        </div>
+        <div class="referee"> 
+            <div class="decision"><h1> YOU WIN! </h1></div>
+            <div class="newGame" onclick="restartGame()">PLAY AGAIN</div>
+        </div>
+        <div class="computerhand">
+            <h1>COMPUTER PICKED</h1>
+            <div class="handImageContainer">
+              <img id="computerPickImage" src='Paper2.png' /> 
+            </div>   
+        </div>       
+      </div>       
+      
+      <div class="col">
+        Match History: <br>
+        <p id="his"></p>
+      </div>
+    </div>
+
+
+
+<!-- Site footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-6">
+        <h6>About</h6>
+        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque error dignissimos commodi officia est voluptas, eaque possimus ipsum, voluptatibus magni facere accusamus fuga? Quasi a obcaecati error unde necessitatibus ut?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum temporibus obcaecati facilis, excepturi est nulla error repellendus, soluta id amet suscipit rerum fugiat facere. Fugit minus facilis atque voluptatibus quos.
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Categories</h6>
+        <ul class="footer-links">
+          <li><a href="#">Bato bato pik</a></li>
+          <li><a href="#">Google Play</a></li>
+          <li><a href="#">Apple Store</a></li>
+          <li><a href="#">IOS</a></li>
+          <li><a href="#">Android</a></li>
+          <li><a href="#">Random</a></li>
+        </ul>
+      </div>
+
+      <div class="col-xs-6 col-md-3">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="">About Us</a></li>
+          <li><a href="">Contact Us</a></li>
+          <li><a href="">Contribute</a></li>
+          <li><a href="h">Privacy Policy</a></li>
+          
+        </ul>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; WD20P-SOFTWARECHASERS LAURIO.
+        </p>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-xs-12">
+        <ul class="social-icons">
+          <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+          <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+
+    <script src="js.js"></script>
+  </body>
+</html>
